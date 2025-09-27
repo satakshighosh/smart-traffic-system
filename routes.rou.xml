@@ -1,0 +1,11 @@
+<routes>
+    <!-- Vehicle type -->
+    <vType id="car" accel="1.0" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="16.67"/>
+
+    <!-- Continuous flows for 1 hour (3600 sec) -->
+    <!-- Replace edge IDs with the ones from your .net.xml -->
+    <flow id="west_to_north" type="car" begin="0" end="3600" number="600" from="E5" to="E1" departLane="1"/>
+    <flow id="south_to_north" type="car" begin="0" end="3600" number="600" from="E6" to="E1" departLane="free"/>
+    <flow id="west_to_east"  type="car" begin="0" end="3600" number="600" from="E5"  to="E4" departLane="free"/>
+    <flow id="south_to_east"  type="car" begin="0" end="3600" number="600" from="E6"  to="E4" departLane="0"/>
+</routes>
